@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jessica Ringler Personal Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "stylesheet" href = "style.css">
+
+</head>
+<body>
+<!--Navbar links-->
+    <nav id = "header" class = "navbar stickyHeader">
+       <div id = "brandName" class="brand-name-div">
+        <span class="brand-name">Jessica Ringler</span>  
+       </div>
+        <div id = "navItems" class = "topnav justify-content-end">
+            <a href = "#aboutMe">About</a>
+            <a href = "#portfolio">Portfolio</a>
+            <a href = "#contactForm">Contact</a>
+            <a href = "Assets/FullStackWebDevResume.pdf" target = "blank" >R&#233;sum&#233;</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+
+        </div>
+    </nav>
+    
+    <main class = "container">
+<!--Bio section-->
+        <section id = "aboutMe">
+            <div class = "row justify-content-center">
+                <h1 class = "sectionTitle">Bio</h1>
+            </div>
+            
+                <hr>
+            <div class = "row justify-content-center">
+
+                <div class = "col-md-4" id = "picCol">
+                    <img id = "profilePic" class = "img-responsive" src = "Assets/profilePic.png" alt = "picture of Jessica Ringler">
+                </div>
+        
+                    <br>
+
+                <div class = "col-md-6" id = "bioCol">
+                    <p id = "bio">I have over 8 years of experience teaching mathematics grades 6-12.  My knowledge in mathematics has made my transition to Web Development easy.  I enjoy the nature of coding because it parallels my ninja skills in mathematics.</p>
+                </div>
+            </div>
+        </section>
+<!--Portfolio/Projects-->
+        <hr class = "thick">
+        <section id = "portfolio">
+
+            <div class = "row justify-content-center">
+                <h1 class = "sectionTitle">Portfolio</h1>
+            </div>
+            
+                <hr>
+            
+            <div class = "row justify-content-center">
+                
+                <div class="card" id = "infoInternacional">
+                    <div class="row no-gutters">
+                        <div class="col-sm-5 projectPic">
+                            <img class = "card-img" src="Assets/infoInt.png" alt="country search">
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="card-body">
+                                <h5 class="card-title">Info Internacional</h5>
+                                <p class = "subTitle">Description:<br>  <span class = "cardText">The user can search a country of their choice and is presented with current photographs, time, and weather of the chosen country.</span></p>
+                                <p class = "subTitle">Technologies Used:<br> <span class = "cardText">Unsplash API, Openweathermap API, HTML, CSS, and JavaScipt</span></p>
+                                <a href="https://github.com/jrringler13759/RinglerProject1.git" target = "blank" class="btn btn-primary">GitHub Repo</a>
+                                <a href="https://jrringler13759.github.io/RinglerProject1/" target = "blank" class="btn btn-primary">Live Page</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id = "weatherDashboard">
+                    <div class="row no-gutters">
+                        <div class="col-sm-5 projectPic">
+                            <img class = "card-img" src="Assets/weather.png" alt="weather dashboard">
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="card-body">
+                                <h5 class="card-title">Weather Dashboard</h5>
+                                <p class = "subTitle">Description:<br>  <span class = "cardText">User can search for any city nation-wide. They are presented with the current weather as well as a five-day forecast.</span></p>
+                                <p class = "subTitle">Technologies Used:<br> <span class = "cardText">Openweathermap API, HTML, CSS, and JavaScipt</span></p>
+                                <a href="https://github.com/jrringler13759/HW6.git" target = "blank" class="btn btn-primary">GitHub Repo</a>
+                                <a href="https://jrringler13759.github.io/HW6/" target = "blank" class="btn btn-primary">Live Page</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id = "budgetTracker">
+                    <div class="row no-gutters">
+                        <div class="col-sm-5 projectPic">
+                            <img class = "card-img" src="Assets/budget.png" alt="budget tracker">
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="card-body">
+                                <h5 class="card-title">Offline Budget Tracker</h5>
+                                <p class = "subTitle">Description:<br><span class = "cardText">This is an online/offline application for keeping track of your budget. The user is able to add and subtract funds and is also presented with a graph of their usage.</span></p>
+                                <p class = "subTitle">Technologies Used:<br> <span class = "cardText">IndexedDB, Mongoose, Express  HTML, CSS, and JavaScipt</span></p>
+                                <a href="https://github.com/jrringler13759/Offline-Budget-Tracker-HW18" target = "blank" class="btn btn-primary">GitHub Repo</a>
+                                <a href="https://vibrant-saucisson-39673.herokuapp.com/" target = "blank" class="btn btn-primary">Live Page</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id = "SMSOL">
+                    <div class="row no-gutters">
+                        <div class="col-sm-5 projectPic">
+                            <img class = "card-img" src="Assets/tutorTracker.png" alt="tutor tracker">
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="card-body">
+                                <h5 class="card-title">SMSOL - Tutor Tracker</h5>
+                                <p class = "subTitle">Description:<br><span class = "cardText">The Student Management System for Online Learning (SMSOL) is an application to help with scheduling students. The teacher or tutor can select a student and drag it on to the calendar to the chosen time slot. Appointments can be changed, moved, and deleted. Students can also be added and deleted from a master list.</span></p>
+                                <p class = "subTitle">Technologies Used:<br> <span class = "cardText">Express-Handlebars, Express, Node.js, Sequelize, FullCalendar.io, Moment.js, Bootstrap, JQuery, Javascript, HTML, and CSS.</span></p>
+                                <a href="https://github.com/jrringler13759/project2-jjem" target = "blank" class="btn btn-primary">GitHub Repo</a>
+                                <a href="https://afternoon-eyrie-99732.herokuapp.com" target = "blank" class="btn btn-primary">Live Page</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id = "storyFubmle">
+                    <div class="row no-gutters">
+                        <div class="col-sm-5 projectPic">
+                            <img class = "card-img" src="Assets/story.png" alt="story fumble">
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="card-body">
+                                <h5 class="card-title">Story Fumble</h5>
+                                <p class = "subTitle">Description:<br><span class = "cardText">Story Fumble is an application where the user can blindly enter words into blank spaces creating a funny story. The user first chooses their language and category and then fills in words for the missing parts of speech in the story. After that, the user gets to choose a funny voice that reads the generated story out loud.</span></p>
+                                <p class = "subTitle">Technologies Used:<br> <span class = "cardText">HTML, CSS, JavaScipt (ES6), React.js, JSX, Firebase, Web Speech API, Express, Node.js, MongoDB/Atlas, Mongoose, Bootstrap,and React Bootstrap.   </span></p>
+                                <a href="https://github.com/jrringler13759/MCJJ" target = "blank" class="btn btn-primary">GitHub Repo</a>
+                                <a href="https://story-fumble-app.herokuapp.com" target = "blank" class="btn btn-primary">Live Page</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id = "teamPage">
+                    <div class="row no-gutters">
+                        <div class="col-sm-5 projectPic">
+                            <img class = "card-img" src="Assets/teamPage.png" alt="team generator screenshot">
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="card-body">
+                                <h5 class="card-title">Team Page Generator</h5>
+                                <p class = "subTitle">Description:<br><span class = "cardText">  A Command Line App used to create a webpage of all your employee's information. The user enters information for each employee and the webpage is automatically created when the user decides they don't want to enter any more employees.</span></p>
+                                <p class = "subTitle">Technologies Used:<br> <span class = "cardText">HTML, CSS, and JavaScipt (ES6)   </span></p>
+                                <a href="https://github.com/jrringler13759/Team-Page-Generator" target = "blank" class="btn btn-primary">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card" id = "emplDirectory">
+                    <div class="row no-gutters">
+                        <div class="col-sm-5 projectPic">
+                            <video width="100%" controls>
+                                <source src="Assets/emplTracker.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>                        
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="card-body">
+                                <h5 class="card-title">Employee Directory</h5>
+                                <p class = "subTitle">Description:<br><span class = "cardText">A Command Line App that can be used to add employees and then filter employees by certain roles or departments.</span></p>
+                                <p class = "subTitle">Technologies Used:<br> <span class = "cardText">HTML, CSS, React.js, JSX, MySQL   </span></p>
+                                <a href="https://github.com/jrringler13759/project2-jjem" target = "blank" class="btn btn-primary">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+<!--Contact Form-->
+        <hr class = "thick">
+        <section id = "contactForm">
+            <div class = "row justify-content-center">
+                <h1 class = "sectionTitle">Contact Me</h1>
+            </div>
+            
+                <hr>
+            <div class = "row justify-content-center">
+                <div class = "col-md-8">
+                    <form action = "mailto:jrringler13759@gmail.com" method = "post" enctype = "text/plain">
+                        <div class="form-group">
+                            <label for="validationDefault01">Name</label>
+                            <input type="text" class="form-control" id="validationDefault01" name = "name" required>
+                        </div>
+            
+                        <br>
+                    
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" name = "email" placeholder="name@example.com" required>
+                        </div>
+            
+                        <br>
+            
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" name = "message" rows="5"></textarea>
+                        </div>
+            
+                        <br>
+            
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                        </div>
+            
+                    </form>
+                </div>
+            </div>
+                            
+        </section>
+
+    </main>
+    <footer class = "navbar justify-content-center stikyFooter">&copy; Jessica Ringler   |  
+        
+            <a href = "https://github.com/jrringler13759" target = "blank"><i class="fab fa-github"></i></a>
+            <a href = "https://www.linkedin.com/in/jessica-ringler-8738b119b/" target = "blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href = "mailto:jrringler13759@gmail.com" target = "blank"><i class="far fa-envelope"></i></a>
+        
+    </footer>
+
+    
+</body>
+
+<script src="https://kit.fontawesome.com/288aa916af.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src = "script.js" type = "text/javascript"></script>
+
+</html>

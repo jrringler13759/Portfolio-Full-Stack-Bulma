@@ -10,7 +10,8 @@ a {
 
 html {
     background-color: #5f45bb;
-    background-image: linear-gradient(to bottom right, #180cac, #d054e4); color: #fff;
+    background-image: linear-gradient(to bottom right, #180cac, #d054e4); 
+    color: #fff;
     font-family: "Quicksand", sans-serif;
     font-size: 16px;
     -moz-osx-font-smoothing: grayscale;

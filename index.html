@@ -5,49 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jessica Ringler Personal Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel = "stylesheet" href = "style.css">
-
+    <script src = "js/script.js" type = "text/javascript"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
 </head>
 <body>
+    <div id="wallpaper" class="wallpaper" data-image="Assets/tropics.jpg"></div> 
+    <main class = "container">
 <!--Navbar links-->
     <nav id = "header" class = "navbar stickyHeader">
-       <div id = "brandName" class="brand-name-div">
+       <div id = "brandName" class="navbar-brand">
         <span class="brand-name">Jessica Ringler</span>  
        </div>
-        <div id = "navItems" class = "topnav justify-content-end">
-            <a href = "#aboutMe">About</a>
-            <a href = "#portfolio">Portfolio</a>
-            <a href = "#contactForm">Contact</a>
-            <a href = "Assets/FullStackWebDevResume.pdf" target = "blank" >R&#233;sum&#233;</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <div id = "navItems" class = "navbar-end">
+            <a class = "navbar-item" href = "#aboutMe">About</a>
+            <a class = "navbar-item" href = "#portfolio">Portfolio</a>
+            <a class = "navbar-item" href = "#contactForm">Contact</a>
+            <a class = "navbar-item" href = "Assets/FullStackWebDevResume.pdf" target = "blank" >R&#233;sum&#233;</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a>
 
         </div>
     </nav>
     
-    <main class = "container">
-<!--Bio section-->
-        <section id = "aboutMe">
-            <div class = "row justify-content-center">
-                <h1 class = "sectionTitle">Bio</h1>
-            </div>
-            
-                <hr>
-            <div class = "row justify-content-center">
+        <section class="hero is-primary is-medium">
+            <div class="hero-body content">
+                <div class="content">
+                    <aside class="side"> 
+                        <figure id="picture" class="picture">                
+                            <div class="picture-shadow"></div>
+                            <img id="picture-image" class="picture-image"
+                                src="Assets/profilePic.jpeg" 
+                                
+                                width="320"
+                                height="320"> </figure>
+                                <!--srcset="images/alex.jpg 1x,images/alex@2x.jpg 2x, images/alex@3x.jpg 3x" alt="Portrait of Jessica Ringler"-->
+                    </aside>
 
-                <div class = "col-md-4" id = "picCol">
-                    <img id = "profilePic" class = "img-responsive" src = "Assets/profilePic.png" alt = "picture of Jessica Ringler">
-                </div>
-        
-                    <br>
-
-                <div class = "col-md-6" id = "bioCol">
-                    <p id = "bio">I have over 8 years of experience teaching mathematics grades 6-12.  My knowledge in mathematics has made my transition to Web Development easy.  I enjoy the nature of coding because it parallels my ninja skills in mathematics.</p>
+                    <main class="about">
+                        <h1 class="name">
+                        Hi, I'm Jessica Ringler
+                        </h1>
+                        <p class="job">
+                        Web Developer
+                        </p>
+                        <hr class="hr">
+                        <div class="description">
+                            <p>
+                                I have over 8 years of experience teaching mathematics grades 6-12.  My knowledge in mathematics has made my transition to Web Development easy.  I enjoy the nature of coding because it parallels my ninja skills in mathematics.
+                            </p> 
+                        </div>
+                        <div class="contact">
+                            <a class="button" href="mailto:jrringler13759@gmail.com">
+                                Get in touch
+                            </a>
+                            <ul class="social"> 
+                                <li>
+                                    <a>
+                                        <i class="fab fa-twitter"></i>
+                                    </a> 
+                                </li>
+                                <li> 
+                                    <a>
+                                        <i class="fab fa-github"></i> 
+                                    </a>
+                                </li> 
+                                <li>
+                                    <a>
+                                        <i class="fab fa-linkedin"></i>
+                                    </a> 
+                                </li>
+                            </ul>
+                        </div>
+                    </main>
                 </div>
             </div>
-        </section>
+            </div>
+        </section>  
+
+    
+
 <!--Portfolio/Projects-->
         <hr class = "thick">
         <section id = "portfolio">
@@ -55,28 +92,37 @@
             <div class = "row justify-content-center">
                 <h1 class = "sectionTitle">Portfolio</h1>
             </div>
-            
+        
                 <hr>
             
-            <div class = "row justify-content-center">
+         
                 
-                <div class="card" id = "infoInternacional">
-                    <div class="row no-gutters">
-                        <div class="col-sm-5 projectPic">
-                            <img class = "card-img" src="Assets/infoInt.png" alt="country search">
-                        </div>
-                        <div class="col-sm-7">
-                            <div class="card-body">
-                                <h5 class="card-title">Info Internacional</h5>
-                                <p class = "subTitle">Description:<br>  <span class = "cardText">The user can search a country of their choice and is presented with current photographs, time, and weather of the chosen country.</span></p>
-                                <p class = "subTitle">Technologies Used:<br> <span class = "cardText">Unsplash API, Openweathermap API, HTML, CSS, and JavaScipt</span></p>
-                                <a href="https://github.com/jrringler13759/RinglerProject1.git" target = "blank" class="btn btn-primary">GitHub Repo</a>
-                                <a href="https://jrringler13759.github.io/RinglerProject1/" target = "blank" class="btn btn-primary">Live Page</a>
+                <div class="card is-horizontal" id = "infoInternacional">
+                  
+                      
+                            <div class = "card-image" style = "width: 370px;">
+                                <figure class="image">
+                                        <img style = "width: 320px;" src="Assets/infoInt.png" alt="country search">
+                                </figure>
                             </div>
+                        
+                    
+                   
+           
+                        <div class="card-content">
+                            <h5 class="card-header-title is-6">Info Internacional</h5>
+                            <p class = "card-header-title subTitlei s-6">Description:<br>  <span class = "cardText">The user can search a country of their choice and is presented with current photographs, time, and weather of the chosen country.</span></p>
+                            <p class = "card-header-title subTitle is-6">Technologies Used:<br> <span class = "cardText">Unsplash API, Openweathermap API, HTML, CSS, and JavaScipt</span></p>
+                            <a href="https://github.com/jrringler13759/RinglerProject1.git" target = "blank" class="btn btn-primary">GitHub Repo</a>
+                            <a href="https://jrringler13759.github.io/RinglerProject1/" target = "blank" class="btn btn-primary">Live Page</a>
                         </div>
-                    </div>
+                    
+                    
+                </div> 
+                    
+                 
                 </div>
-
+<!--
                 <div class="card" id = "weatherDashboard">
                     <div class="row no-gutters">
                         <div class="col-sm-5 projectPic">
@@ -180,9 +226,9 @@
                     </div>
                 </div>
 
-            </div>
+                      
         </section>
-<!--Contact Form-->
+
         <hr class = "thick">
         <section id = "contactForm">
             <div class = "row justify-content-center">
@@ -223,8 +269,10 @@
             </div>
                             
         </section>
+    -->
 
     </main>
+
     <footer class = "navbar justify-content-center stikyFooter">&copy; Jessica Ringler   |  
         
             <a href = "https://github.com/jrringler13759" target = "blank"><i class="fab fa-github"></i></a>
@@ -235,11 +283,5 @@
 
     
 </body>
-
-<script src="https://kit.fontawesome.com/288aa916af.js" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src = "script.js" type = "text/javascript"></script>
 
 </html>

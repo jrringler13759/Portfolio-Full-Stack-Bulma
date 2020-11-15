@@ -16,19 +16,22 @@
     <div id="wallpaper" class="wallpaper" data-image="Assets/tropics.jpg"></div> 
     
 <!--Navbar links-->
-    <nav class = "navbar">
-        <div class = "navbar-menu">
+    <nav class = "navbar" role = "navigation" aria-label="main navia">
+        <div class = "navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target = "navMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            <a>            
+        </div>
+        <div id = "navMenu" class = "navbar-menu">
             <div class = "navbar-end">
                 <a class = "navbar-item" href = "#portfolio">Portfolio</a>
                 <a class = "navbar-item" href = "#contactForm">Contact</a>
                 <a class = "navbar-item" href = "Assets/FullStackWebDevResume.pdf" target = "blank" >R&#233;sum&#233;</a>
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>            
             </div>
         </div>
+                        
     </nav>
 <div class = "container">
     <div class="content">
@@ -89,9 +92,9 @@
     <section class = "section" id = "storyFumble">
         <div class = "container">
             <div class = "card columns is-flex is-vcentered is-centered is-horizontal">
-                <div class = "column is-half card-content">
+                <div class = "column is-half is-flex card-content">
                     <div class =  "card-image ">
-                        <figure class = "image">
+                        <figure class = "image is-2by1">
                             <img src="Assets/story.png" alt="story fumble">
                         </figure>
                     </div>
@@ -131,7 +134,7 @@
                 </div>
                 <div class = "column card-content is-half mr-4">
                         <div class =  "card-image ">
-                            <figure class = "image">
+                            <figure class = "image is-2by1">
                                 <img  src="Assets/tutorTracker.png" alt="tutor tracker">
                             </figure>
                         </div>
@@ -148,7 +151,7 @@
             <div class = "card columns is-flex is-vcentered is-centered is-horizontal">
                 <div class = "column is-half card-content">
                     <div class =  "card-image ">
-                        <figure class = "image">
+                        <figure class = "image is-2by1">
                             <img src="Assets/teamPage.png" alt="team generator screenshot">
                         </figure>
                     </div>
@@ -185,7 +188,7 @@
                 </div>
                 <div class = "column card-content is-half mr-4">
                         <div class =  "card-image ">
-                            <figure class = "image">
+                            <figure class = "image is-2by1">
                                 <img src="Assets/infoInt.png" alt="country search">
                             </figure>
                         </div>
@@ -201,19 +204,19 @@
             <div class = "card columns is-flex is-vcentered is-centered is-horizontal">
                 <div class = "column is-half card-content">
                     <div class =  "card-image ">
-                        <figure class = "image is-flex" >
-                            <iframe style="width:500px;height:300px;" src="Assets/emplTracker.mp4" type="video/mp4"></iframe> 
+                        <figure class = "image is-flex is-2by1" >
+                            <iframe class = "has-ratio" src="Assets/emplTracker.mp4" type="video/mp4"></iframe> 
                         </figure>
                     </div>
                 </div>
                 <div class = "column card-stacked">
                     <div class = "card-content">
-                        <div class="card-title title is-3 ">Team Page Generator</div>
+                        <div class="card-title title is-3 ">Employee Directory</div>
                             <p class = "subTitle is-5"><strong>Description:</strong> <br>  
-                                <span>A Command Line App used to create a webpage of all your employee's information. The user enters information for each employee and the webpage is automatically created when the user decides they don't want to enter any more employees.</span></p><br>
+                                <span>A Command Line App that can be used to add employees and then filter employees by certain roles or departments.</span></p><br>
                             <p class = "subTitle is-5"><strong>Technologies Used:</strong> <br> 
-                                <span>HTML, CSS, and JavaScipt (ES6)  </span></p><br>
-                            <a href="https://github.com/jrringler13759/Team-Page-Generator" target = "blank" class="button">GitHub Repo</a>
+                                <span>HTML, CSS, React.js, JSX, MySQL  </span></p><br>
+                            <a href="https://github.com/jrringler13759/Emplyee-Directory-HW19" target = "blank" class="button">GitHub Repo</a>
                     </div>
                 </div>
             </div>
@@ -227,19 +230,19 @@
             <div class = "card columns is-flex is-vcentered is-centered is-horizontal">
                 <div class = "column card-stacked">
                     <div class = "card-content">
-                        <div class="card-title title is-3 ">Info Internacional</div>
+                        <div class="card-title title is-3 ">Offline Budget Tracker</div>
                             <p class = "subTitle is-5"><strong>Description:</strong> <br>  
-                                <span>The user can search a country of their choice and is presented with current photographs, time, and weather of the chosen   country.</span></p><br>
+                                <span>This is an online/offline application for keeping track of your budget. The user is able to add and subtract funds and is also presented with a graph of their usage.</span></p><br>
                             <p class = "subTitle is-5"><strong>Technologies Used:</strong> <br> 
-                                <span>Unsplash API, Openweathermap API,  HTML, CSS, and JavaScipt</span></p><br>
-                            <a href="https://github.com/jrringler13759/RinglerProject1.git" target = "blank" class="button">GitHub Repo</a>
-                            <a href="https://jrringler13759.github.io/RinglerProject1/" target = "blank" class="button">Live Page</a>
+                                <span>IndexedDB, Mongoose, Express  HTML, CSS, and JavaScipt</span></p><br>
+                            <a href="https://github.com/jrringler13759/Offline-Budget-Tracker-HW18" target = "blank" class="button">GitHub Repo</a>
+                            <a href="https://vibrant-saucisson-39673.herokuapp.com/" target = "blank" class="button">Live Page</a>
                     </div>
                 </div>
                 <div class = "column card-content is-half mr-4">
                         <div class =  "card-image ">
-                            <figure class = "image">
-                                <img src="Assets/infoInt.png" alt="country search">
+                            <figure class = "image is-2by1">
+                                <img src="Assets/budget.png" alt="country search">
                             </figure>
                         </div>
                 </div>
@@ -248,25 +251,26 @@
     </section>
 
 <!--pic left 
-    employee directory/tracker-->
+    Weather Dashboard-->
     <section class = "section">
         <div class = "container">
             <div class = "card columns is-flex is-vcentered is-centered is-horizontal">
                 <div class = "column is-half card-content">
                     <div class =  "card-image ">
-                        <figure class = "image">
-                            <img src="Assets/teamPage.png" alt="team generator screenshot">
+                        <figure class = "image is-2by1">
+                            <img src="Assets/weather.png" alt="team generator screenshot">
                         </figure>
                     </div>
                 </div>
                 <div class = "column card-stacked">
                     <div class = "card-content">
-                        <div class="card-title title is-3 ">Team Page Generator</div>
+                        <div class="card-title title is-3 ">Weather Dashboard</div>
                             <p class = "subTitle is-5"><strong>Description:</strong> <br>  
-                                <span>A Command Line App used to create a webpage of all your employee's information. The user enters information for each employee and the webpage is automatically created when the user decides they don't want to enter any more employees.</span></p><br>
+                                <span>User can search for any city nation-wide. They are presented with the current weather as well as a five-day forecast.</span></p><br>
                             <p class = "subTitle is-5"><strong>Technologies Used:</strong> <br> 
-                                <span>HTML, CSS, and JavaScipt (ES6)  </span></p><br>
-                            <a href="https://github.com/jrringler13759/Team-Page-Generator" target = "blank" class="button">GitHub Repo</a>
+                                <span>Openweathermap API, HTML, CSS, and JavaScipt  </span></p><br>
+                            <a href="https://github.com/jrringler13759/HW6.git" target = "blank" class="button">GitHub Repo</a>
+                            <a href="https://jrringler13759.github.io/HW6/" target = "blank" class="button">Live Page</a>
                     </div>
                 </div>
             </div>
